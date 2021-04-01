@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>АвтоШум</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main_head">
+        <div class="wrapper">  
+            <div class="top_head">
+                <div class="city">
+                    <span>Омск</span>
+                </div>
+                <div class="header__line-1__searchFormTriggerWrapper _desktop">
+                    <a class="header__line-1__searchFormTrigger js-searchFormTrigger" href="#"></a>
+                </div> 
+                <div class="searchForm js-searchForm" style="display: none;">
+                    <form action="/search/">
+                        <input class="searchForm__input js-searchForm__input" name="q" maxlength="50" type="text" placeholder="Поиск">
+                        <input class="searchForm__submit" type="submit" value="">
+                    </form>
+                </div>
+            </div>
+            <div class="wrap_head">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt="АвтоШум"></a>
+                <div class="descr_logo">Федеральная сеть шумоизоляции автомобилей</div>
+                <div class="contacts_head">
+                    <a href="tel:+73812218254" class="phone_head">+7 381 221 82 54</a>
+                    <span>Пн - Пт 10:00 - 19:00, Вс - выходной</span>
+                </div>
+                <a href="#" class="btn btn_gray btn_callback">Заказать звонок</a>
+                <a href="#" class="toggle_menu"><span></span></a>
+            </div>
+            <div class="wrap_menu">
+                <div class="top_menu">
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="/reviews/">Отзывы</a></li>
+                        <li><a href="/pay-delivery/">Оплата и доставка</a></li>
+                        <li><a href="/qa/">Вопрос-ответ</a></li>
+                        <li><a href="/useful/">Полезно знать</a></li>
+                        <li><a href="/sale/">Акции</a></li>
+                    </ul>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="/calc/"><img src="img/calculation.svg" alt="Alt" class="svg"> Расчитать стоимость</a></li>
+                        <li><a href="/our_works/">Примеры работ</a></li>
+                        <li><a href="/services/">Услуги</a></li>
+                        <li><a href="/products/">Купить материалы</a></li>
+                        <li><a href="/about/">О компании</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="carousel carousel_banner">
+                <div class="item_banner">
+                    <div class="image_banner">
+                        <img src="img/banner-1.png" alt="Alt">
+                    </div>
+                    <div class="text_banner">
+                        <h1>Шумоизоляция автомобиля в Омске</h1>
+                        <div class="descr">Частичная и полная шумоизоляция</div>
+                        <div class="buttons">
+                            <a href="/calc/" class="btn">Калькулятор стоимости</a>
+                            <a href="/our_works/" class="btn btn_gray">Примеры работ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_banner">
+                    <div class="image_banner">
+                        <img src="img/banner-1.png" alt="Alt">
+                    </div>
+                    <div class="text_banner">
+                        <div class="h1">Шумоизоляция автомобиля в Омске</div>
+                        <div class="descr">Частичная и полная шумоизоляция</div>
+                        <div class="buttons">
+                            <a href="#" class="btn">Калькулятор стоимости</a>
+                            <a href="#" class="btn btn_gray">Примеры работ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="filter_auto">
+        <div class="wrapper">
+            <h2>Выберите Ваш автомобиль</h2>
+            <div class="descr">Чтобы посмотреть пример работы марки вашего авто</div>
+            <div class="workSampleFilter__wrapper">
+                <form name="_form" action="/our_works/" method="get" class="smartfilter">
+                    <div class="workSampleFilter__fieldsWrapper">
+                        <div class="workSampleFilter__fields">                         
+                            <div class="workSampleFilter__field">
+                                <select class="js-dummySelect js-workSampleFilter__brandChoice" data-target=".js-workSampleFilter__brandChoice-native" data-selectize-instance=".js-workSampleFilter__brandChoice"></select>
+                                <div class="hidden">
+                                    <select class="js-workSampleFilter__brandChoice-native" id="CAR_BRAND" name="filter_36" onchange="smartFilter.change(this)">
+                                        <option>все</option>
+                                        <option data-role="label_arrFilter_36_1697201568" id="arrFilter_36_1697201568" value="Y">Audi</option>
+                                        <option data-role="label_arrFilter_36_1015510435" id="arrFilter_36_1015510435" value="Y">BMW</option>
+                                        <option data-role="label_arrFilter_36_1563414863" id="arrFilter_36_1563414863" value="Y">Chery </option>
+                                        <option data-role="label_arrFilter_36_3902099845" id="arrFilter_36_3902099845" value="Y">Chevrolet</option>
+                                        <option data-role="label_arrFilter_36_3421607690" id="arrFilter_36_3421607690" value="Y">Datsun</option>
+                                        <option data-role="label_arrFilter_36_2338777813" id="arrFilter_36_2338777813" value="Y">Ford</option>
+                                        <option data-role="label_arrFilter_36_2391052429" id="arrFilter_36_2391052429" value="Y">Geely</option>
+                                        <option data-role="label_arrFilter_36_931301749" id="arrFilter_36_931301749" value="Y">Great Wall</option>
+                                        <option data-role="label_arrFilter_36_1168447364" id="arrFilter_36_1168447364" value="Y">Haval</option>
+                                        <option data-role="label_arrFilter_36_453225708" id="arrFilter_36_453225708" value="Y">Hawtai</option>
+                                        <option data-role="label_arrFilter_36_3028884103" id="arrFilter_36_3028884103" value="Y">Honda</option>
+                                        <option data-role="label_arrFilter_36_725137152" id="arrFilter_36_725137152" value="Y">Hyundai</option>
+                                        <option data-role="label_arrFilter_36_557112829" id="arrFilter_36_557112829" value="Y">Infiniti</option>
+                                        <option data-role="label_arrFilter_36_3548282960" id="arrFilter_36_3548282960" value="Y">Jeep</option>
+                                        <option data-role="label_arrFilter_36_2750299769" id="arrFilter_36_2750299769" value="Y">KIA</option>
+                                        <option data-role="label_arrFilter_36_2193057507" id="arrFilter_36_2193057507" value="Y">Lada</option>
+                                        <option data-role="label_arrFilter_36_2524959161" id="arrFilter_36_2524959161" value="Y">Lexus </option>
+                                        <option data-role="label_arrFilter_36_2972497475" id="arrFilter_36_2972497475" value="Y">LIFAN</option>
+                                        <option data-role="label_arrFilter_36_2275010920" id="arrFilter_36_2275010920" value="Y">Mazda</option>
+                                        <option data-role="label_arrFilter_36_3160041673" id="arrFilter_36_3160041673" value="Y">Mitsubishi</option>
+                                        <option data-role="label_arrFilter_36_3915583553" id="arrFilter_36_3915583553" value="Y">Nissan</option>
+                                        <option data-role="label_arrFilter_36_412998518" id="arrFilter_36_412998518" value="Y">Renault</option>
+                                        <option data-role="label_arrFilter_36_756629876" id="arrFilter_36_756629876" value="Y">Skoda</option>
+                                        <option data-role="label_arrFilter_36_4021728285" id="arrFilter_36_4021728285" value="Y">Subaru</option>
+                                        <option data-role="label_arrFilter_36_3996464534" id="arrFilter_36_3996464534" value="Y">Suzuki</option>
+                                        <option data-role="label_arrFilter_36_159715601" id="arrFilter_36_159715601" value="Y">Tagaz</option>
+                                        <option data-role="label_arrFilter_36_434472425" id="arrFilter_36_434472425" value="Y">Toyota</option>
+                                        <option data-role="label_arrFilter_36_1617535017" id="arrFilter_36_1617535017" value="Y">Volkswagen</option>
+                                        <option data-role="label_arrFilter_36_2691668571" id="arrFilter_36_2691668571" value="Y">УАЗ</option>
+                                    </select>
+                                </div>
+                            </div>                        
+                            <div class="workSampleFilter__field">
+                                <select class="js-dummySelect js-workSampleFilter__modelChoice" data-target=".js-workSampleFilter__modelChoice-native" data-selectize-instance=".js-workSampleFilter__modelChoice"></select>
+                                <div class="hidden">
+                                    <select class="js-workSampleFilter__modelChoice-native" id="CAR_MODEL" name="filter_37" onchange="smartFilter.change(this)">
+                                        <option>все</option>
+                                        <option data-role="label_arrFilter_37_3775469389" id="arrFilter_37_3775469389" value="Y">2 Series</option>
+                                        <option data-role="label_arrFilter_37_3106313110" id="arrFilter_37_3106313110" value="Y">2114</option>
+                                        <option data-role="label_arrFilter_37_1842515611" id="arrFilter_37_1842515611" value="Y">3</option>
+                                        <option data-role="label_arrFilter_37_498629140" id="arrFilter_37_498629140" value="Y">6</option>
+                                        <option data-role="label_arrFilter_37_2526682930" id="arrFilter_37_2526682930" value="Y">Accord</option>
+                                        <option data-role="label_arrFilter_37_1469931781" id="arrFilter_37_1469931781" value="Y">Allion</option>
+                                        <option data-role="label_arrFilter_37_2313719433" id="arrFilter_37_2313719433" value="Y">Almera</option>
+                                        <option data-role="label_arrFilter_37_2452426039" id="arrFilter_37_2452426039" value="Y">Arkana</option>
+                                        <option data-role="label_arrFilter_37_2051008948" id="arrFilter_37_2051008948" value="Y">ASX</option>
+                                        <option data-role="label_arrFilter_37_2534872973" id="arrFilter_37_2534872973" value="Y">Aveo</option>
+                                        <option data-role="label_arrFilter_37_457449412" id="arrFilter_37_457449412" value="Y">BB</option>
+                                        <option data-role="label_arrFilter_37_1185904179" id="arrFilter_37_1185904179" value="Y">Boliger</option>
+                                        <option data-role="label_arrFilter_37_4220645443" id="arrFilter_37_4220645443" value="Y">Camry XV40</option>
+                                        <option data-role="label_arrFilter_37_2464167309" id="arrFilter_37_2464167309" value="Y">Camry XV55</option>
+                                        <option data-role="label_arrFilter_37_3502023552" id="arrFilter_37_3502023552" value="Y">Camry XV70</option>
+                                        <option data-role="label_arrFilter_37_1782515666" id="arrFilter_37_1782515666" value="Y">Caravelle</option>
+                                        <option data-role="label_arrFilter_37_3031178151" id="arrFilter_37_3031178151" value="Y">Ceed</option>
+                                        <option data-role="label_arrFilter_37_1972899085" id="arrFilter_37_1972899085" value="Y">Ceratto</option>       
+                                        <option data-role="label_arrFilter_37_1255305069" id="arrFilter_37_1255305069" value="Y">Corolla E150</option>
+                                        <option data-role="label_arrFilter_37_2028211695" id="arrFilter_37_2028211695" value="Y">Corolla E170</option>
+                                        <option data-role="label_arrFilter_37_4286320928" id="arrFilter_37_4286320928" value="Y">Corolla E180</option>
+                                        <option data-role="label_arrFilter_37_3693492749" id="arrFilter_37_3693492749" value="Y">Cr-V 2</option>
+                                        <option data-role="label_arrFilter_37_893755192" id="arrFilter_37_893755192" value="Y">Cr-V 4</option>
+                                        <option data-role="label_arrFilter_37_1111666606" id="arrFilter_37_1111666606" value="Y">Cr-V 5</option>
+                                        <option data-role="label_arrFilter_37_666720612" id="arrFilter_37_666720612" value="Y">Creta</option>
+                                        <option data-role="label_arrFilter_37_3167996171" id="arrFilter_37_3167996171" value="Y">CX-5</option>
+                                        <option data-role="label_arrFilter_37_2563425898" id="arrFilter_37_2563425898" value="Y">Duster</option>
+                                        <option data-role="label_arrFilter_37_4286979706" id="arrFilter_37_4286979706" value="Y">Elantra</option>
+                                        <option data-role="label_arrFilter_37_765794321" id="arrFilter_37_765794321" value="Y">Emgrand</option>
+                                        <option data-role="label_arrFilter_37_1546755367" id="arrFilter_37_1546755367" value="Y">Fielder</option>
+                                        <option data-role="label_arrFilter_37_1744915883" id="arrFilter_37_1744915883" value="Y">Fit</option>
+                                        <option data-role="label_arrFilter_37_2821516012" id="arrFilter_37_2821516012" value="Y">Fit Shuttle</option>
+                                        <option data-role="label_arrFilter_37_2734777837" id="arrFilter_37_2734777837" value="Y">Focus</option>
+                                        <option data-role="label_arrFilter_37_1069804719" id="arrFilter_37_1069804719" value="Y">Forester SH</option>
+                                        <option data-role="label_arrFilter_37_3519909251" id="arrFilter_37_3519909251" value="Y">Forester SJ</option>
+                                        <option data-role="label_arrFilter_37_789767047" id="arrFilter_37_789767047" value="Y">Fusion</option>
+                                        <option data-role="label_arrFilter_37_760718887" id="arrFilter_37_760718887" value="Y">Fx-35</option>
+                                        <option data-role="label_arrFilter_37_2299470122" id="arrFilter_37_2299470122" value="Y">Fx37</option>
+                                        <option data-role="label_arrFilter_37_160813891" id="arrFilter_37_160813891" value="Y">Golf</option>
+                                        <option data-role="label_arrFilter_37_37385634" id="arrFilter_37_37385634" value="Y">Grand Cherokee</option>
+                                        <option data-role="label_arrFilter_37_1828320055" id="arrFilter_37_1828320055" value="Y">Grand Vitara</option>
+                                        <option data-role="label_arrFilter_37_2428023720" id="arrFilter_37_2428023720" value="Y">Granta</option>
+                                        <option data-role="label_arrFilter_37_209963891" id="arrFilter_37_209963891" value="Y">GS</option>
+                                        <option data-role="label_arrFilter_37_2605781755" id="arrFilter_37_2605781755" value="Y">GX</option>
+                                        <option data-role="label_arrFilter_37_801772497" id="arrFilter_37_801772497" value="Y">H5</option>
+                                        <option data-role="label_arrFilter_37_3066249835" id="arrFilter_37_3066249835" value="Y">H6</option>
+                                        <option data-role="label_arrFilter_37_361909791" id="arrFilter_37_361909791" value="Y">Highlander</option>
+                                        <option data-role="label_arrFilter_37_991533264" id="arrFilter_37_991533264" value="Y">Hover</option>
+                                        <option data-role="label_arrFilter_37_1794472993" id="arrFilter_37_1794472993" value="Y">i30</option>
+                                        <option data-role="label_arrFilter_37_632613606" id="arrFilter_37_632613606" value="Y">i40</option>
+                                        <option data-role="label_arrFilter_37_120526512" id="arrFilter_37_120526512" value="Y">IX35</option>
+                                        <option data-role="label_arrFilter_37_2696019238" id="arrFilter_37_2696019238" value="Y">Jade</option>
+                                        <option data-role="label_arrFilter_37_82264082" id="arrFilter_37_82264082" value="Y">K5</option>
+                                        <option data-role="label_arrFilter_37_2268244482" id="arrFilter_37_2268244482" value="Y">Kalina</option>
+                                        <option data-role="label_arrFilter_37_2760636482" id="arrFilter_37_2760636482" value="Y">Kaptur</option>
+                                        <option data-role="label_arrFilter_37_4169762015" id="arrFilter_37_4169762015" value="Y">Karoq</option>
+                                        <option data-role="label_arrFilter_37_794953269" id="arrFilter_37_794953269" value="Y">Kuga</option>
+                                        <option data-role="label_arrFilter_37_599831458" id="arrFilter_37_599831458" value="Y">Lacetti</option>
+                                        <option data-role="label_arrFilter_37_1524846578" id="arrFilter_37_1524846578" value="Y">Lancer</option>
+                                        <option data-role="label_arrFilter_37_1544732216" id="arrFilter_37_1544732216" value="Y">Land Cruiser</option>
+                                        <option data-role="label_arrFilter_37_2061512142" id="arrFilter_37_2061512142" value="Y">Largus</option>
+                                        <option data-role="label_arrFilter_37_966277502" id="arrFilter_37_966277502" value="Y">LC Prado 120</option>
+                                        <option data-role="label_arrFilter_37_1993977785" id="arrFilter_37_1993977785" value="Y">LC Prado 150</option>
+                                        <option data-role="label_arrFilter_37_1722658777" id="arrFilter_37_1722658777" value="Y">Leaf</option>
+                                        <option data-role="label_arrFilter_37_2735762972" id="arrFilter_37_2735762972" value="Y">Logan</option>
+                                        <option data-role="label_arrFilter_37_2024131376" id="arrFilter_37_2024131376" value="Y">LX</option>
+                                        <option data-role="label_arrFilter_37_223733465" id="arrFilter_37_223733465" value="Y">Montero</option>
+                                        <option data-role="label_arrFilter_37_3660629029" id="arrFilter_37_3660629029" value="Y">Multivan</option>
+                                        <option data-role="label_arrFilter_37_3928292130" id="arrFilter_37_3928292130" value="Y">Murano Z51</option>
+                                        <option data-role="label_arrFilter_37_1932372632" id="arrFilter_37_1932372632" value="Y">Murano Z52</option>
+                                        <option data-role="label_arrFilter_37_1582927619" id="arrFilter_37_1582927619" value="Y">Niva</option>
+                                        <option data-role="label_arrFilter_37_1871664426" id="arrFilter_37_1871664426" value="Y">Note</option>
+                                        <option data-role="label_arrFilter_37_1251191218" id="arrFilter_37_1251191218" value="Y">NX</option>
+                                        <option data-role="label_arrFilter_37_4033995953" id="arrFilter_37_4033995953" value="Y">Octavia</option>
+                                        <option data-role="label_arrFilter_37_1457953309" id="arrFilter_37_1457953309" value="Y">Odyssey</option>
+                                        <option data-role="label_arrFilter_37_728874860" id="arrFilter_37_728874860" value="Y">On-do</option>
+                                        <option data-role="label_arrFilter_37_4288903829" id="arrFilter_37_4288903829" value="Y">Optima</option>
+                                        <option data-role="label_arrFilter_37_873995960" id="arrFilter_37_873995960" value="Y">Outback</option>
+                                        <option data-role="label_arrFilter_37_790722161" id="arrFilter_37_790722161" value="Y">Outlander GF</option>
+                                        <option data-role="label_arrFilter_37_3700950841" id="arrFilter_37_3700950841" value="Y">Outlander GT</option>
+                                        <option data-role="label_arrFilter_37_44995057" id="arrFilter_37_44995057" value="Y">Outlander XL</option>
+                                        <option data-role="label_arrFilter_37_3281882808" id="arrFilter_37_3281882808" value="Y">Pajero</option>
+                                        <option data-role="label_arrFilter_37_2407800277" id="arrFilter_37_2407800277" value="Y">Pajero Sport</option>
+                                        <option data-role="label_arrFilter_37_1243871979" id="arrFilter_37_1243871979" value="Y">Passat B8</option>
+                                        <option data-role="label_arrFilter_37_1115616972" id="arrFilter_37_1115616972" value="Y">Patriot</option>
+                                        <option data-role="label_arrFilter_37_447265385" id="arrFilter_37_447265385" value="Y">Patriot Pickup</option>
+                                        <option data-role="label_arrFilter_37_1289711702" id="arrFilter_37_1289711702" value="Y">Pilot</option>
+                                        <option data-role="label_arrFilter_37_560265468" id="arrFilter_37_560265468" value="Y">Polo Mk5</option>
+                                        <option data-role="label_arrFilter_37_3094194502" id="arrFilter_37_3094194502" value="Y">Polo Mk6</option>
+                                        <option data-role="label_arrFilter_37_474440917" id="arrFilter_37_474440917" value="Y">Priora</option>
+                                        <option data-role="label_arrFilter_37_3812953435" id="arrFilter_37_3812953435" value="Y">Prius</option>
+                                        <option data-role="label_arrFilter_37_2868079750" id="arrFilter_37_2868079750" value="Y">Probox</option>
+                                        <option data-role="label_arrFilter_37_1571364860" id="arrFilter_37_1571364860" value="Y">Q3</option>
+                                        <option data-role="label_arrFilter_37_3033184969" id="arrFilter_37_3033184969" value="Y">Q5</option>
+                                        <option data-role="label_arrFilter_37_110893618" id="arrFilter_37_110893618" value="Y">Qashqai J10</option>
+                                        <option data-role="label_arrFilter_37_1905994404" id="arrFilter_37_1905994404" value="Y">Qashqai J11</option>
+                                        <option data-role="label_arrFilter_37_1401831083" id="arrFilter_37_1401831083" value="Y">Ractis</option>
+                                        <option data-role="label_arrFilter_37_2910512687" id="arrFilter_37_2910512687" value="Y">Rapid</option>
+                                        <option data-role="label_arrFilter_37_3660433395" id="arrFilter_37_3660433395" value="Y">Rav4 XA30</option>
+                                        <option data-role="label_arrFilter_37_2506903860" id="arrFilter_37_2506903860" value="Y">Rav4 XA40</option>
+                                        <option data-role="label_arrFilter_37_3132898239" id="arrFilter_37_3132898239" value="Y">RAV4 XA50</option>
+                                        <option data-role="label_arrFilter_37_23033065" id="arrFilter_37_23033065" value="Y">Rio FB</option>
+                                        <option data-role="label_arrFilter_37_2917809125" id="arrFilter_37_2917809125" value="Y">Rio JB</option>
+                                        <option data-role="label_arrFilter_37_81588351" id="arrFilter_37_81588351" value="Y">Rio QB</option>
+                                        <option data-role="label_arrFilter_37_2451217208" id="arrFilter_37_2451217208" value="Y">Rio QB Hatchback</option>
+                                        <option data-role="label_arrFilter_37_3778226060" id="arrFilter_37_3778226060" value="Y">Rio X-Line</option>
+                                        <option data-role="label_arrFilter_37_2900686063" id="arrFilter_37_2900686063" value="Y">RX</option>
+                                        <option data-role="label_arrFilter_37_1353136037" id="arrFilter_37_1353136037" value="Y">Sandero</option>
+                                        <option data-role="label_arrFilter_37_2378887146" id="arrFilter_37_2378887146" value="Y">Santa</option>
+                                        <option data-role="label_arrFilter_37_1043130410" id="arrFilter_37_1043130410" value="Y">Solano</option>
+                                        <option data-role="label_arrFilter_37_2213402535" id="arrFilter_37_2213402535" value="Y">Solaris</option>
+                                        <option data-role="label_arrFilter_37_3283154813" id="arrFilter_37_3283154813" value="Y">Sonata</option>
+                                        <option data-role="label_arrFilter_37_755893076" id="arrFilter_37_755893076" value="Y">Sorento</option>
+                                        <option data-role="label_arrFilter_37_3845382506" id="arrFilter_37_3845382506" value="Y">Sorento Prime</option>
+                                        <option data-role="label_arrFilter_37_2457799468" id="arrFilter_37_2457799468" value="Y">Sportage</option>
+                                        <option data-role="label_arrFilter_37_4094162120" id="arrFilter_37_4094162120" value="Y">Stepwgn</option>
+                                        <option data-role="label_arrFilter_37_2440824338" id="arrFilter_37_2440824338" value="Y">Superb</option>
+                                        <option data-role="label_arrFilter_37_1664244775" id="arrFilter_37_1664244775" value="Y">Tager</option>
+                                        <option data-role="label_arrFilter_37_290616919" id="arrFilter_37_290616919" value="Y">Tahoe</option>
+                                        <option data-role="label_arrFilter_37_2409050071" id="arrFilter_37_2409050071" value="Y">Teana</option>
+                                        <option data-role="label_arrFilter_37_2846483439" id="arrFilter_37_2846483439" value="Y">Teramont</option>
+                                        <option data-role="label_arrFilter_37_1066257532" id="arrFilter_37_1066257532" value="Y">Terrano</option>
+                                        <option data-role="label_arrFilter_37_4155931283" id="arrFilter_37_4155931283" value="Y">Tiggo</option>
+                                        <option data-role="label_arrFilter_37_2430111174" id="arrFilter_37_2430111174" value="Y">Tiguan</option>
+                                        <option data-role="label_arrFilter_37_834480477" id="arrFilter_37_834480477" value="Y">Tiida</option>
+                                        <option data-role="label_arrFilter_37_4252470359" id="arrFilter_37_4252470359" value="Y">Toureg</option>
+                                        <option data-role="label_arrFilter_37_547631406" id="arrFilter_37_547631406" value="Y">Tucson</option>
+                                        <option data-role="label_arrFilter_37_2759077259" id="arrFilter_37_2759077259" value="Y">Tundra</option>
+                                        <option data-role="label_arrFilter_37_1524167026" id="arrFilter_37_1524167026" value="Y">Vesta</option>
+                                        <option data-role="label_arrFilter_37_1975747347" id="arrFilter_37_1975747347" value="Y">Vitara</option>
+                                        <option data-role="label_arrFilter_37_2787011924" id="arrFilter_37_2787011924" value="Y">X-Ray</option>
+                                        <option data-role="label_arrFilter_37_2506062907" id="arrFilter_37_2506062907" value="Y">X-Trail T30</option>   
+                                        <option data-role="label_arrFilter_37_3797437613" id="arrFilter_37_3797437613" value="Y">X-Trail T31</option>
+                                        <option data-role="label_arrFilter_37_2068913431" id="arrFilter_37_2068913431" value="Y">X-Trail T32</option>
+                                        <option data-role="label_arrFilter_37_841680835" id="arrFilter_37_841680835" value="Y">X60</option>
+                                        <option data-role="label_arrFilter_37_2981310818" id="arrFilter_37_2981310818" value="Y">XV</option>
+                                        <option data-role="label_arrFilter_37_1853712790" id="arrFilter_37_1853712790" value="Y">Х70</option>
+                                    </select>
+                                </div>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div class="workSampleFilter__controlsWrapper">
+                        <div class="workSampleFilter__controls">
+                            <div class="workSampleFilter__control">
+                                <button class="btn btn-1" type="submit" id="set_filter" name="set_filter">Найти</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <script>
+                var smartFilter = new JCSmartFilter('/', 'horizontal');
+            </script>
+        </div>
+    </section>
+    <section class="services">
+        <div class="wrapper">
+            <div class="carousel_service">
+                <a href="https://автошум.рф/services/shumoizolyatsiya-dverey/" class="item_service">
+                    <div class="image_service">
+                        <img src="img/service-1.png" alt="Alt">
+                    </div>
+                    <div class="title_service">Двери</div>
+                    <div class="price_service">от 1800₽</div>
+                </a>
+                <a href="https://автошум.рф/services/shumoizolyatsiya-kryshi/" class="item_service">
+                    <div class="image_service">
+                        <img src="img/service-2.png" alt="Alt">
+                    </div>
+                    <div class="title_service">Крыша</div>
+                    <div class="price_service">от 4000₽</div>
+                </a>
+                <a href="https://автошум.рф/services/shumoizolyatsiya-pola/" class="item_service">
+                    <div class="image_service">
+                        <img src="img/service-3.png" alt="Alt">
+                    </div>
+                    <div class="title_service">Пол</div>
+                    <div class="price_service">от 8000₽</div>
+                </a>
+                <a href="https://автошум.рф/services/shumoizolyatsiya-bagazhnika/" class="item_service">
+                    <div class="image_service">
+                        <img src="img/service-4.png" alt="Alt">
+                    </div>
+                    <div class="title_service">Багажник</div>
+                    <div class="price_service">от 7000₽</div>
+                </a>
+                <a href="https://автошум.рф/services/shumoizolyatsiya-arok/" class="item_service">
+                    <div class="image_service">
+                        <img src="img/service-5.png" alt="Alt">
+                    </div>
+                    <div class="title_service">Арки снаружи</div>
+                    <div class="price_service">от 7000₽</div>
+                </a>
+                <a href="https://автошум.рф/services/shumoizolyatsiya-dverey/" class="item_service">
+                    <div class="image_service">
+                        <img src="img/service-1.png" alt="Alt">
+                    </div>
+                    <div class="title_service">Двери</div>
+                    <div class="price_service">от 1800₽</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="advan fadeInUp wow animated" data-wow-duration="0.5s" data-wow-delay="0.5s">
+        <div class="wrapper">
+            <div class="wrap_advan">
+                <div class="text_advan">
+                    <h2>Сделайте езду максимально комфортной</h2>
+                    <ul class="check_list fadeInRight wow animated" data-wow-duration="0.5s" data-wow-delay="1s">
+                        <li>Улучшение звучания штатной акустики;</li>
+                        <li>Нет дребезжания пластика в салоне;</li>
+                        <li>Удаление скрипов салона;</li>
+                        <li>Предотвращение образования конденсата;</li>
+                        <li>Защита автомобиля от коррозии.</li>
+                    </ul>
+                </div>
+                <div class="schedule_advan">
+                    <div class="wrap_schedule statistik">
+                        <div class="item_schedule">
+                            <div class="title_schedule">снижение<br> уровня шума</div>
+                            <div class="number_schedule"><span class=" wow animated" id="lines1">90</span>%</div>
+                            <img src="img/schedule-1.svg" alt="Alt">
+                        </div>
+                        <div class="item_schedule">
+                            <div class="title_schedule">снижение термопотерь</div>
+                            <div class="number_schedule"><span class=" wow animated" id="lines2">70</span>%</div>
+                            <img src="img/schedule-2.svg" alt="Alt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tariffs">
+        <div class="wrapper">
+            <h2>Эффективность шумоизоляции</h2>
+            <div class="descr">Мы предлагаем несколько вариантов шумоизоляции с разными степенями эффективности</div>
+            <a href="#" class="btn">Сравнить уровни</a>
+            <div class="wrap_tariff">
+                <div class="item_tariff">
+                    <div class="title_tariff">Комфорт</div>
+                    <div class="scale_tariff">
+                        <div class="title_scale">Эффективность</div>
+                        <div class="wrap_scale">
+                            <div class="active_scale scale_60"><span>60%</span></div>
+                        </div>
+                    </div>
+                    <div class="info_tariff">
+                        <div class="tag_tariff">2-5 слоев</div>
+                        <p class="descr_tariff">Суммарная толщина слоев от 7мм</p>
+                        <p class="material_tariff">Материалы STANDART</p>
+                    </div>
+                    <div class="text_tariff">
+                        <p>Базовый уровень шумоизоляции «КОМФОРТ» подойдет для тех, кто хочет снизить шумы в автомобиле, сделать салон теплее и избавиться от скрипов. Все эти преимущества Вы сможете получить по очень приятным ценам</p>
+                    </div>
+                </div>
+                <div class="item_tariff">
+                    <div class="title_tariff">Премиум</div>
+                    <div class="scale_tariff">
+                        <div class="title_scale">Эффективность</div>
+                        <div class="wrap_scale">
+                            <div class="active_scale scale_80"><span>80%</span></div>
+                        </div>
+                    </div>
+                    <div class="info_tariff">
+                        <div class="tag_tariff">2-5 слоев</div>
+                        <p class="descr_tariff">Суммарная толщина слоев от 11мм</p>
+                        <p class="material_tariff">Материалы PREMIUM</p>
+                    </div>
+                    <div class="text_tariff">
+                        <p>Уровень «ПРЕМИУМ» мы советуем тем, кто хочет значительное снижение шума при меньшем увеличении общего веса авто. Климат в салоне становится комфортнее, устраняются скрипы и значительно улучшается звучание акустики</p>
+                    </div>
+                </div>
+                <div class="item_tariff">
+                    <div class="title_tariff">Экстра</div>
+                    <div class="label_tariff">хит продаж</div>
+                    <div class="scale_tariff">
+                        <div class="title_scale">Эффективность</div>
+                        <div class="wrap_scale">
+                            <div class="active_scale scale_100"><span>100%</span></div>
+                        </div>
+                    </div>
+                    <div class="info_tariff">
+                        <div class="tag_tariff">3-6 слоев</div>
+                        <p class="descr_tariff">Суммарная толщина слоев от 13мм</p>
+                        <p class="material_tariff">Материалы MAXIMUM</p>
+                    </div>
+                    <div class="text_tariff">
+                        <p>«ЭКСТРА» — предусматривает использование самых эффективных и инновационных материалов, которые позволяют достигать лучших результатов. Вы улучшите комфорт Вашего салона на пару классов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="wrapper">
+            <div class="text_partner">
+                <h2>Партнёры Шумоff</h2>
+                <div class="logo_partner">
+                    <img src="img/logo-partner.png" alt="Alt">
+                </div>
+                <div class="descr">
+                    <p>Мы используем это высококачественную продукцию нового поколения компании «Шумoff».</p>
+                    <p>Качеству этой марки доверяют тысячи профессиональных установщиков автозвука не только в России, но и по всему миру.</p>
+                </div>
+                <a href="/products/" class="btn btn_dark">Каталог материалов</a>
+            </div>
+            <div class="certification_partner">
+                <a class="gallery" rel="group" title="это фото 1" href="img/cert-1-big.jpg"><img src="img/cert-1.png" /></a>
+                <a class="gallery" rel="group" title="это фото 2" href="img/cert-2-big.jpg"><img src="img/cert-2.png" /></a>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="wrapper">
+            <h2>Что говорят наши клиенты</h2>
+            <div class="wrap_testimonials">
+                <div class="carousel_testimonials">
+                    <div class="item_testimonials">
+                        <div class="title_testimonials">
+                            <div class="name_testimonials">Игорь Иваненко</div>
+                            <div class="date_testimonials">06.04.2020</div>
+                            <div class="auto_testimonials">УАЗ Patriot Pickup</div>
+                        </div>
+                        <p>Недавно заезжали в этот сервисный центр - ребята назвали приемлемую стоимость за шумоизоляцию нашего авто, сделали все в сроки, аккуратно, без претензий. Можем только рекомендовать.</p>
+                    </div>
+                    <div class="item_testimonials">
+                        <div class="title_testimonials">
+                            <div class="name_testimonials">Александр</div>
+                            <div class="date_testimonials">03.04.2020</div>
+                            <div class="auto_testimonials">Mitsubishi Outlander GT</div>
+                        </div>
+                        <p>Чисто, аккуратно, работают добросовестно. Рекомендую!</p>
+                    </div>
+                    <div class="item_testimonials">
+                        <div class="title_testimonials">
+                            <div class="name_testimonials">Игорь Иваненко</div>
+                            <div class="date_testimonials">06.04.2020</div>
+                            <div class="auto_testimonials">УАЗ Patriot Pickup</div>
+                        </div>
+                        <p>Недавно заезжали в этот сервисный центр - ребята назвали приемлемую стоимость за шумоизоляцию нашего авто, сделали все в сроки, аккуратно, без претензий. Можем только рекомендовать.</p>
+                    </div>
+                </div>
+                <div class="link_testimonials">
+                    <span>Наши многочисленные клиенты нас рекомендуют!</span>
+                    <p>Читайте больше отзывов</p>
+                    <a href="/reviews/" class="btn btn_dark">Смотреть отзывы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="questions">
+        <div class="wrapper">
+            <div class="callback_quetion">
+                <h2>Возникли вопросы?</h2>
+                <p>Оставьте номер телефона и получите бесплатную консультацию в течение дня!</p>
+                <a href="#" class="btn btn_dark">Перезвонить мне</a>
+            </div>
+            <div class="price_quetion">
+                <h2>Хотите узнать цену?</h2>
+                <p>Воспользуйтесь калькулятором и узнайте цену для шумоизоляции вашего Авто</p>
+                <a href="/calc/" class="btn btn_gray">Калькулятор стоимости</a>
+            </div>
+        </div>
+    </div>
+    <section class="maps">
+        <div class="wrapper">
+            <div class="wrap_map">
+                <div class="text_map">
+                    <h2>Федеральная сеть АвтоШум</h2>
+                    <p>Специализированная компания по шумоизоляции автомобилей, являемся официальным дилером производителей материалов, имеем собственные установочные сервисы.</p>
+                    <p>Наши сервисные центры находятся в 15 городах России. Мы стремительно развиваемся, что доказывает наше стремление быть лучшими для своих клиентов.</p>
+                    <a href="/about/" class="link_more">Больше о нас <img src="img/link-arr.svg" alt="Alt" class="svg"></a>
+                </div>
+                <div class="image_map">
+                    <img src="img/map.png" alt="Alt">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="advantages">
+        <div class="wrapper">
+            <div class="title_advantage">
+                <h2><span>Почему</span> стоит заказать <span>шумоизоляцию</span> у нас?</h2>
+            </div>
+            <div class="carousel_advantage">
+                <div class="item_advantage">
+                    <div>
+                        <span>5 лет гарантии<br> на любой комлекс наших услуг</span>
+                        <img src="img/advan-1.png" alt="Alt">
+                    </div>
+                </div>
+                <div class="item_advantage">
+                    <div>
+                        <span>Фотоотчет процесса, раскрытие информации об используемых материалах и их количестве</span>
+                        <img src="img/advan-2.png" alt="Alt">
+                    </div>
+                </div>
+                <div class="item_advantage">
+                    <div>
+                        <span>Всего 1 день занимает весь комплекс работ<br> по установке</span>
+                        <img src="img/advan-3.png" alt="Alt">
+                    </div>
+                </div>
+                <div class="item_advantage">
+                    <div>
+                        <span>Гарантия бережного отношения к вашему автомобилю</span>
+                        <img src="img/advan-4.png" alt="Alt">
+                    </div>
+                </div>
+                <div class="item_advantage">
+                    <div>
+                        <span>Более 500 выполненных работ, любые марки<br> и модели авто</span>
+                        <img src="img/advan-5.png" alt="Alt">
+                    </div>
+                </div>
+                <div class="item_advantage">
+                    <div>
+                        <span>Мы занимаемся<br> только шумоизоляцией автомобилей<br> и знаем о ней все!</span>
+                        <img src="img/advan-6.png" alt="Alt">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="works">
+        <div class="wrapper">
+            <h2>Примеры выполненных работ</h2>
+            <div class="carousel carousel_work">
+                <a href="" class="item_work">
+                    <div class="image_work">
+                        <img src="img/work-1.png" alt="Alt">
+                    </div>
+                    <div class="title_work">Hyundai Elantra</div>
+                    <span>Уровень Премиум</span>
+                </a>
+                <a href="" class="item_work">
+                    <div class="image_work">
+                        <img src="img/work-2.png" alt="Alt">
+                    </div>
+                    <div class="title_work">Subaru Forester SJ</div>
+                    <span>Уровень Премиум</span>
+                </a>
+                <a href="" class="item_work">
+                    <div class="image_work">
+                        <img src="img/work-3.png" alt="Alt">
+                    </div>
+                    <div class="title_work">Toyota Corolla E150</div>
+                    <span>Уровень Премиум</span>
+                </a>
+                <a href="" class="item_work">
+                    <div class="image_work">
+                        <img src="img/work-4.png" alt="Alt">
+                    </div>
+                    <div class="title_work">Volkswagen Multivan</div>
+                    <span>Уровень Премиум</span>
+                </a>
+                <a href="" class="item_work">
+                    <div class="image_work">
+                        <img src="img/work-1.png" alt="Alt">
+                    </div>
+                    <div class="title_work">Hyundai Elantra</div>
+                    <span>Уровень Премиум</span>
+                </a>
+            </div>
+            <div class="text_work">
+                <p>В нашем портфолио на сайте опубликовано более 100 работ по шумоизоляции (шумки) авто в Омске, где мы пошагово рассказываем, как работали с конкретным автомобилем. Подробные фотографии и комментарии подтвердят высокое качество нашей работы. Убедитесь сами!</p>
+                <a href="#" class="btn btn_dark">Смотреть примеры</a>
+            </div>
+        </div>
+    </section>
+    <section class="independently">
+        <div class="wrapper">
+            <h2>Желаете установить самостоятельно? <span>Пожалуйста!</span></h2>
+            <div class="wrap_independently">
+                <div class="text_independently">
+                    <p>В нашем каталоге представлен обширный ассортимент материалов для шумоизоляции от надежного производителя.<br> Как официальный дилер Шумофф в Омске, мы предлагаем все товары по очень выгодной стоимости.</p>
+                    <a href="/products/" class="btn btn_dark">Смотреть каталог</a>
+                </div>
+                <ul class="list_independently">
+                    <li><span>1</span> Все материалы можно заказать на сайте и забрать со склада на следующий день после оплаты.</li>
+                    <li><span>2</span> Для иногородних покупателей предлагаем доставку заказа.</li>
+                    <li><span>3</span> Есть готовые инструкции для самостоятельной шумоизоляции авто.</li>
+                </ul>
+                <div class="link_calculation">
+                    <h3>Калькулятор количества материалов</h3>
+                    <p>Это удобно и позволит вам избежать ненужных трат!</p>
+                    <a href="/calc/" class="btn">Расчитать</a>
+                </div>
+                <div class="info_independently">
+                    <p>Наши консультанты помогут вам с подбором необходимых материалов конкретно под Ваш автомобиль и цели по самым доступным ценам, а также Вы получите всю необходимую информацию по установке, что поможет Вам избежать ошибок, влияющих на результат шумоизоляции.</p>
+                </div>
+                <div class="note_independently">Если в процессе самостоятельной установки что-то пошло не так, вы всегда можете обратиться к нашим специалистам за консультацией или доставить автомобиль в нашу мастерскую для завершения работ по шумоизоляции авто в Омске.</div>
+            </div>
+        </div>
+    </section>
+    <section class="callback">
+        <div class="wrapper">
+            <div class="wrap_callback">
+                <h2>Хотите, мы вам перезвоним?</h2>
+                <form action="" class="form form_callback">
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <input type="submit" class="btn btn_dark" value="Отправить заявку">
+                </form>
+                <p>Наш менеджер поможет подобрать подходящий уровень шумоизоляции, оценит работу и запишет на удобное время.</p>
+            </div>
+        </div>
+    </section>
+    <div class="social">
+        <div class="wrapper">
+            <div class="item_social">
+                <div class="title_social">Напиши нам сюда:</div>
+                <div class="links_social">
+                    <a href="https://t.me/avtoshumbot" target="_blank"><img src="img/telegramm.svg" alt="Alt"></a>
+                    <a href="https://api.whatsapp.com/send?phone=79609910366&text=" target="_blank"><img src="img/watsapp.svg" alt="Alt"></a>
+                </div>
+            </div>
+            <div class="item_social">
+                <div class="title_social">Подпишись на нас</div>
+                <div class="links_social">
+                    <a href="https://vk.com/omskshumoff" target="_blank"><img src="img/vk.svg" alt="Alt"></a>
+                    <a href="https://www.youtube.com/channel/UCnC6A2Kf56Yilc3_KBq2pQg?view_as=subscriber" target="_blank"><img src="img/youtube.svg" alt="Alt"></a>
+                    <a href="https://www.instagram.com/avtoshum.rf/" target="_blank"><img src="img/instagramm.svg" alt="Alt"></a>
+                    <a href="https://www.drive2.ru/o/ShumoffOmsk/" target="_blank"><img src="img/soc.png" alt="Alt"></a>
+                </div>
+            </div>
+            <div class="item_social">
+                <div class="title_social">Онлайн чат</div>
+                <div class="chat_social">
+                    <p>Напиши прямо здесь</p>
+                    <a href="#" class="btn_chat"><img src="img/icon-chat.svg" alt="Alt"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrap_foot">
+            <div class="wrapper">
+                <div class="menu_foot">
+                    <div class="item_menu">
+                        <a href="#" class="title_menu">Шумоизоляция</a>
+                        <ul>
+                            <li><a href="/calc/">Стоимость</a></li>
+                            <li><a href="/services/">Услуги</a></li>
+                            <li><a href="/our_works/">Примеры работ</a></li>
+                            <li><a href="/sale/">Акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="item_menu">
+                        <a href="#" class="title_menu">Материалы</a>
+                        <ul>
+                            <li><a href="/calc/">Расчет количества</a></li>
+                            <li><a href="/how-to-buy/">Как купить</a></li>
+                            <li><a href="/pay-delivery/">Оплата и доставка</a></li>
+                            <li><a href="/useful/">Полезно знать</a></li>
+                        </ul>
+                    </div>
+                    <div class="item_menu">
+                        <a href="#" class="title_menu">Информация</a>
+                        <ul>
+                            <li><a href="/about/#address">Контактная информация</a></li>
+                            <li><a href="/reviews/">Отзывы</a></li>
+                            <li><a href="/qa/">Вопрос-ответ</a></li>
+                            <li><a href="/policy/">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts_foot">
+                    <a href="#" class="btn btn_lgray">Заказать звонок</a>
+                    <a href="tel:+73812218254" class="phone_foot">+7 381 221 82 54</a>
+                    <div class="address_foot">Омск, ул. Заводская, д. 34А/1.<br> ул. Барнаульская д. 6</div>
+                    <a href="/about/#map" class="link_map">Схема проезда</a>
+                </div>
+                <div class="link_foot">
+                    <a href="#" class="btn btn_gray">Отправить заявку</a>
+                    <div class="social_foot">
+                        <a href="https://vk.com/omskshumoff" target="_blank"><img src="img/icon-vk.svg" alt="Alt"></a>
+                        <a href="https://www.drive2.ru/o/ShumoffOmsk/" target="_blank"><img src="img/icon-driver.svg" alt="Alt"></a>
+                        <a href="https://www.youtube.com/channel/UCnC6A2Kf56Yilc3_KBq2pQg?view_as=subscriber" target="_blank"><img src="img/icon-youtube.svg" alt="Alt"></a>
+                        <a href="https://www.instagram.com/avtoshum.rf/" target="_blank"><img src="img/icon-inst.svg" alt="Alt"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="wrapper">
+                <p>© 2021 АвтоШум, шумоизоляция автомобилей с 2011 года. <span>Все права защищены.</span></p>
+                <a href="#">Разработка сайта</a>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll_top">
+        <div class="wrapper">
+            <a href="#" class="btn_top"></a>
+        </div>
+    </div>
+	
+    
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-1.2.1.pack.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script-1.js"></script>
+    <script src="js/script-2.js"></script>
+    <script>
+		new WOW().init();
+	</script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.gallery, a.iframe").fancybox();
+        });
+    </script>
+</body>
+</html>
