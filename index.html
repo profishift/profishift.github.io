@@ -16,15 +16,18 @@
 </head>
 <body>
     <header class="main_head">
-        <div class="wrapper">   
+        <div class="wrapper">  
             <div class="top_head">
                 <div class="city">
                     <span>Омск</span>
                 </div>
-                <div class="search">
-                    <form action="" class="form_search">
-                        <input type="text" placeholder="Поиск">
-                        <input type="submit">
+                <div class="header__line-1__searchFormTriggerWrapper _desktop">
+                    <a class="header__line-1__searchFormTrigger js-searchFormTrigger" href="#"></a>
+                </div> 
+                <div class="searchForm js-searchForm" style="display: none;">
+                    <form action="/search/">
+                        <input class="searchForm__input js-searchForm__input" name="q" maxlength="50" type="text" placeholder="Поиск">
+                        <input class="searchForm__submit" type="submit" value="">
                     </form>
                 </div>
             </div>
