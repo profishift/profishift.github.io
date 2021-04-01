@@ -1,0 +1,597 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css_1/common.css"/>
+    <link rel="stylesheet" href="css_1/main-1.css"/>
+    <link rel="stylesheet" href="css_1/custom.css"/>
+    <link rel="stylesheet" href="css_1/vendor.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script
+            src="js/jquery-3.4.1.js"
+    ></script>
+</head>
+
+<body>
+<div class="content-container">
+    <header class="header">
+        <div class="container">
+            <div class="header__line-1">
+
+
+                <div class="headchangecity s45"><span onclick="modal_window.open('city');">Омск <img
+                        src="image/icons/arrowdown.png"></span></div>
+
+                <div style="display: none;" class="window" data-id="city">
+                    <div class="windowbox">
+                        <p>Выберите Ваш город:</p>
+                        <div>
+                            <div class="partitions"><a href="https://екатеринбург.xn--80ae4ahth8a.xn--p1ai/about/">Екатеринбург</a>
+                            </div>
+                            <div class="partitions"><a href="https://краснодар.xn--80ae4ahth8a.xn--p1ai/about/">Краснодар</a>
+                            </div>
+                            <div class="partitions"><a href="https://красноярск.xn--80ae4ahth8a.xn--p1ai/about/">Красноярск</a>
+                            </div>
+                            <div class="partitions"><a href="https://москва.xn--80ae4ahth8a.xn--p1ai/about/">Москва</a>
+                            </div>
+                            <div class="partitions"><a href="https://новосибирск.xn--80ae4ahth8a.xn--p1ai/about/">Новосибирск</a>
+                            </div>
+                            <div class="partitions"><b>Омск</b></div>
+                            <div class="partitions"><a href="https://санкт-петербург.xn--80ae4ahth8a.xn--p1ai/about/">Санкт-Петербург</a>
+                            </div>
+                            <div class="partitions"><a href="https://самара.xn--80ae4ahth8a.xn--p1ai/about/">Самара</a>
+                            </div>
+                            <div class="partitions"><a
+                                    href="https://саратов.xn--80ae4ahth8a.xn--p1ai/about/">Саратов</a></div>
+                            <div class="partitions"><a href="https://нижний-новгород.xn--80ae4ahth8a.xn--p1ai/about/">Нижний
+                                Новгород</a></div>
+                            <div class="partitions"><a href="https://ростов-на-дону.xn--80ae4ahth8a.xn--p1ai/about/">Ростов-на-Дону</a>
+                            </div>
+                            <div class="partitions"><a
+                                    href="https://иркутск.xn--80ae4ahth8a.xn--p1ai/about/">Иркутск</a></div>
+                            <div class="partitions"><a
+                                    href="https://оренбург.xn--80ae4ahth8a.xn--p1ai/about/">Оренбург</a></div>
+                            <div class="partitions"><a href="https://челябинск.xn--80ae4ahth8a.xn--p1ai/about/">Челябинск</a>
+                            </div>
+                            <div class="partitions"><a href="https://тюмень.xn--80ae4ahth8a.xn--p1ai/about/">Тюмень</a>
+                            </div>
+                        </div>
+                        <span class="windowx" onclick="modal_window.close()"></span>
+                    </div>
+                </div>
+
+                <!--Меню верхнее простое-->
+
+                <nav class="headerTopMenu _desktop">
+                    <a class="headerTopMenu__link" href="/reviews/">Контакты</a>
+                    <a class="headerTopMenu__link" href="/reviews/">Отзывы</a>
+                    <a class="headerTopMenu__link" href="/pay-delivery/">Оплата и доставка</a>
+                    <a class="headerTopMenu__link" href="/qa/">Вопрос-ответ</a>
+                    <a class="headerTopMenu__link" href="/useful/">Полезно знать</a>
+                    <a class="headerTopMenu__link" href="/sale/">Акции</a>
+                </nav>
+
+                <div class="header__line-1__searchFormTriggerWrapper _desktop">
+                    <input type="text" placeholder="Поиск"/>
+                    <a class="header__line-1__searchFormTrigger js-searchFormTrigger" href="#"></a>
+                </div>
+
+                <div class="header__line-1__mobile">
+                    <a class="header__line-1__logoLink" href="/">
+                        <img class="header__line-1__logo"
+                             src="image/logo-mobile.png" alt="logo">
+                    </a>
+                    <a class="header__line-1__searchFormTrigger js-searchFormTrigger" href="#"></a>
+                    <a class="header__line-1__contactsFormTrigger js-showModal" data-target="#callMeBackModal"
+                       href="#"></a>
+                    <a class="header__line-1__bottomLineMenuTrigger js-bottomLineMenuTrigger" href="#"></a>
+                </div>
+
+                <!--Поиск без выпадашки-->
+
+                <div class="searchForm js-searchForm">
+                    <form action="/search/">
+                        <input class="searchForm__input js-searchForm__input" name="q" maxlength="50" type="text"
+                               placeholder="Поиск">
+                        <input class="searchForm__submit" type="submit" value="">
+                    </form>
+                </div>
+            </div>
+
+            <div class="header__line-2">
+                <div class="header__line-2__section header__line-2__logoWrapper">
+
+                    <a class="header__line-2__logoLink" href="/">
+                        <img class="hiddenMd hiddenSm header__line-2__logo" src="image/logo.png" alt="logo">
+                        <img class="hiddenLg hiddenSm header__line-2__logo"
+                             src="/local/templates/revision2019-template/imgs/logo-md.png" alt="logo">
+                        <img class="hiddenLg hiddenMd header__line-2__logo"
+                             src="/local/templates/revision2019-template/imgs/logo-sm.png" alt="logo">
+                    </a>
+
+                </div>
+
+                <div class="header__line-2__section header__line-2__onMarketFrom">
+                    <span>
+                        <!-- Слоган в шапке -->
+                        <!--<div>
+	 Тишина и комфорт <br>
+	 в салон автомобиля
+</div>
+ <br>
+ -->
+<div>
+	 Федеральная сеть<br>
+	 шумоизоляции автомобилей
+</div>
+ <br>                    </span>
+                </div>
+
+                <div class="header__line-2__section header__line-2__contacts">
+                    <!-- Контакты в шапке -->
+                    <a href="tel:+73812218254" class="header__line-2__contactsPhone js-contactsFormTrigger mgo-number">+7
+                        381 221 82 54</a>&nbsp;
+                    <span class="header__line-2__workingRegime">Пн - Пт 10:00 - 19:00,
+<br class="hiddenLg"> Сб, Вс - выходной                    </span>
+                </div>
+
+                <div class="header__line-2__section header__line-2__getCall">
+                    <a class="btn btn-1 btn-big header__line-2__getCallTrigger js-showModal" href="#"
+                       data-target="#callMeBackModal" onclick="ym(44874988,'reachGoal','click-call-button')">Заказать
+                        звонок</a>
+                </div>
+            </div>
+
+            <div class="header__line-3 js-mobileMenu">
+
+                <div class="header__line-3__contacts">
+                    <!-- Контакты в шапке для мобильной версии -->
+                    <a class="header__line-3__contactsPhone js-phoneTrigger mgo-number" href="tel:+73812218254">+7 381
+                        221 82 54</a>
+                    <a class="header__line-3__contactsLink" href="#">Пн - Пт 10:00 - 19:00, Сб, Вс - выходной</a>
+                </div>
+
+                <!--Меню главное-->
+
+                <nav class="headerBottomMenu">
+                    <a class="headerBottomMenu__link link__with-image" href="/calc/"><img
+                            src="image/header-calc.png"/>РАСЧИТАТЬ
+                        СТОИМОСТЬ</a>
+                    <a class="headerBottomMenu__link " href="/our_works/">ПРИМЕРЫ РАБОТ</a>
+                    <a class="headerBottomMenu__link " href="/sale/">УСЛУГИ</a>
+                    <a class="headerBottomMenu__link " href="/products/">КУПИТЬ МАТЕРИАЛЫ</a>
+                    <a class="headerBottomMenu__link " href="/about/">О КОМПАНИИ</a>
+                </nav>
+
+                <!--Меню верхнее простое мобильное-->
+
+                <nav class="headerTopMenu _mobile">
+                    <a class="headerTopMenu__link" href="/contacts/">Контакты</a>
+                    <a class="headerTopMenu__link" href="/reviews/">Отзывы</a>
+                    <a class="headerTopMenu__link" href="/pay-delivery/">Оплата и доставка</a>
+                    <a class="headerTopMenu__link" href="/qa/">Вопрос-ответ</a>
+                    <a class="headerTopMenu__link" href="/useful/">Полезно знать</a>
+                    <a class="headerTopMenu__link" href="/sale/">Акции</a>
+                </nav>
+            </div>
+        </div>
+        <div class="scrollTop__wrapper" style="display: block;">
+            <div>
+                <button class="js-scrollTop scrollTop"></button>
+            </div>
+        </div>
+    </header>
+    <div class="under-head-block">
+
+        <div class="headchangecity s45"><span onclick="modal_window.open('city');">Красноярск <img src="image/icons/arrowdown.png"></span></div>
+
+        <div style="display: none;" class="window" data-id="city">
+            <div class="windowbox">
+                <p>Выберите Ваш город:</p>
+                <div>
+                    <div class="partitions"><a href="https://екатеринбург.xn--80ae4ahth8a.xn--p1ai/about/">Екатеринбург</a></div><div class="partitions"><a href="https://краснодар.xn--80ae4ahth8a.xn--p1ai/about/">Краснодар</a></div><div class="partitions"><b>Красноярск</b></div><div class="partitions"><a href="https://москва.xn--80ae4ahth8a.xn--p1ai/about/">Москва</a></div><div class="partitions"><a href="https://новосибирск.xn--80ae4ahth8a.xn--p1ai/about/">Новосибирск</a></div><div class="partitions"><a class="js-partitions-def" href="https://xn--80ae4ahth8a.xn--p1ai/about/">Омск</a></div><div class="partitions"><a href="https://санкт-петербург.xn--80ae4ahth8a.xn--p1ai/about/">Санкт-Петербург</a></div><div class="partitions"><a href="https://самара.xn--80ae4ahth8a.xn--p1ai/about/">Самара</a></div><div class="partitions"><a href="https://саратов.xn--80ae4ahth8a.xn--p1ai/about/">Саратов</a></div><div class="partitions"><a href="https://нижний-новгород.xn--80ae4ahth8a.xn--p1ai/about/">Нижний Новгород</a></div><div class="partitions"><a href="https://ростов-на-дону.xn--80ae4ahth8a.xn--p1ai/about/">Ростов-на-Дону</a></div><div class="partitions"><a href="https://иркутск.xn--80ae4ahth8a.xn--p1ai/about/">Иркутск</a></div><div class="partitions"><a href="https://оренбург.xn--80ae4ahth8a.xn--p1ai/about/">Оренбург</a></div><div class="partitions"><a href="https://челябинск.xn--80ae4ahth8a.xn--p1ai/about/">Челябинск</a></div><div class="partitions"><a href="https://тюмень.xn--80ae4ahth8a.xn--p1ai/about/">Тюмень</a></div>        </div>
+                <span class="windowx" onclick="modal_window.close()"></span>
+            </div>
+        </div>    </div>
+    <ul class="breadcrumbs"><li class="breadcrumbs__item">
+        <a href="/" title="Главная" class="breadcrumbs__link">
+            Главная
+        </a>
+    </li><li class="breadcrumbs__item">
+        <span class="breadcrumbs__link">О компании</span>
+    </li></ul>
+    <!-- main content -->
+    <div class="map-block">
+        <div class="map-block__text">
+            <h1 style="margin:15px 0;">Федеральная сеть АвтоШум</h1>
+            <p>Специализированная компания по шумоизоляции автомобилей, являемся официальным дилером производителей
+                материалов, имеем собственные установочные сервисы.</p>
+            <p>
+                Наши сервисные центры находятся в 15 городах России.
+                Мы стремительно развиваемся, что доказывает наше стремление быть лучшими для своих клиентов.</p>
+            <div class="map-block__links">
+                <a class="orange-link down-link" id="scroll-to-scheme" href="#">Схема проезда</a>
+                <a class="orange-link down-link" id="scroll-to-contacts" href="#">Связаться с нами </a>
+            </div>
+        </div>
+        <div class="map-block__map">
+            <img src="image/block1-map.png"/>
+        </div>
+
+    </div>
+
+    <div class="company-slogan-block">
+        <h2>Компания АвтоШум — это тишина и комфорт в салоне каждого автомобиля.</h2>
+        <img src="image/company-slogan-block.png"/>
+    </div>
+
+    <h2 class="mobile-h2">Заглянуть в компанию изнутри</h2>
+    <div class="slider-block">
+        <div class="slider-container">
+            <div class="slider-container-item">
+                <img src="image/slider-picture1.jpg"/>
+                <span>Все сотрудники сохраняют чистоту рабочего места и порядок в организации рабочего пространства.</span>
+            </div>
+            <div class="slider-container-item">
+                <img src="image/slider-picture2.JPG"/>
+                <span>Все сотрудники сохраняют чистоту рабочего места и порядок в организации рабочего пространства.</span>
+            </div>
+            <div class="slider-container-item">
+                <img src="image/slider-picture3.jpg"/>
+                <span>Все сотрудники сохраняют чистоту рабочего места и порядок в организации рабочего пространства.</span>
+            </div>
+        </div>
+        <div class="mobile-slider-text">
+            <span>Все сотрудники сохраняют чистоту рабочего места и порядок в организации рабочего пространства.</span>
+            <span>Все сотрудники сохраняют чистоту рабочего места и порядок в организации рабочего пространства.</span>
+            <span>Все сотрудники сохраняют чистоту рабочего места и порядок в организации рабочего пространства.</span>
+        </div>
+    </div>
+
+    <h2 class="mobile-h2">О компании в цифрах</h2>
+    <div class="cifer-block">
+        <div class="cifer-block__item">
+            <img src="image/icons/cifer-block_open.png"/>
+            <div class="cifer-block__item-text">
+                <p>2011</p>
+                <p>Год основания компании</p>
+            </div>
+        </div>
+        <div class="cifer-block__item">
+            <img src="image/icons/cifer-block_circle.png"/>
+            <div class="cifer-block__item-text">
+                <p>15 филиалов</p>
+                <p>в городах России</p>
+            </div>
+        </div>
+        <div class="cifer-block__item">
+            <img src="image/icons/cifer-block_proximo.png"/>
+            <div class="cifer-block__item-text">
+                <p>от 6 сотрудников</p>
+                <p>работают над вашим автомобилем</p>
+            </div>
+        </div>
+        <div class="cifer-block__item">
+            <img src="image/icons/cifer-block_car.png"/>
+            <div class="cifer-block__item-text">
+                <p>более 2 500</p>
+                <p>автомобилей каждый год</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="partner-block">
+        <h2 class="mobile-h2 hidden-h2">Партнеры Шумoff</h2>
+        <div class="partner-block__info">
+            <img src="image/icons/partner-block-shumoff.png"/>
+            <div class="partner-block__info-text">
+                <h2>Партнеры Шумoff</h2>
+                <p>Мы используем высококачественную продукцию нового поколения компании «Шумoff».
+                    Качеству этой марки доверяют тысячи профессиональных установщиков автозвука не только в России, но и
+                    по всему миру.</p>
+                <a class="blue-link" href="https://автошум.рф/products/">Каталог материалов</a>
+            </div>
+        </div>
+        <div class="partner-block__image js-aboutSertificates">
+
+            <a class="partner-block__item fancybox" id="bx_4665576_1339"
+               href="image/big-sertificat1.jpg" rel="aboutSertificates">
+                <div class="partner-block__itemInner"
+                     style="background-image: url(image/icons/partner-block_sertificat1.png);">
+                    <div class="partner-block__item-plus"></div>
+                </div>
+            </a>
+            <a class="partner-block__item fancybox" id="bx_4665576_1338"
+               href="image/big-sertificat2.jpg" rel="aboutSertificates">
+                <div class="partner-block__itemInner"
+                     style="background-image: url(image/icons/partner-block_sertificat2.png);">
+                    <div class="partner-block__item-plus"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="calc-block">
+        <div class="calc-block__item">
+            <img src="image/icons/calc-block_image1.png"/>
+            <div>
+                <h3>Калькулятор стоимости материалов и услуги</h3>
+                <a class="orange-link" href="https://автошум.рф/calc/">Перейти</a>
+            </div>
+        </div>
+        <div class="calc-block__item">
+            <img src="image/icons/calc-block_image2.png"/>
+            <div>
+                <h3>Примеры работ по шумоизоляции автомобиля</h3>
+                <a class="orange-link" href="https://автошум.рф/our_works/">Перейти</a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mobile-h2">Контактные данные в Омске</h2>
+    <div class="contactUs-block">
+        <div class="contactUs-block__top">
+            <div class="contactUs-block__item">
+                <span><a href="tel:+73812218254">+7 381 221 82 54</a></span>
+                <a class="withImage" href="mailto:mail@автошум.рф"><img src="image/icons/contacts-block_mail.png"/>
+                    mail@автошум.рф</a><br>
+                <a href="" class="blue-link">Заказать звонок</a>
+            </div>
+
+            <div class="contactUs-block__item">
+                <a class="withImage" href=""><img src="image/icons/contacts-block_geo.png"/> г. Омск </a>
+                <p>
+                    <a href="https://yandex.ru/maps/66/omsk/?ll=73.368212%2C54.989342&mode=search&oid=1735195806&ol=biz&z=11">ул.
+                        Заводская, д. 34а/1</a><br>
+                    <a href="https://yandex.by/maps/66/omsk/house/barnaulskaya_ulitsa_6/Y0oYcgdhS0cCQFtvfXxxcnRgZw==/?ll=73.401617%2C55.003782&z=18.56">
+                        ул. Барнаульская д. 6</a></p>
+            </div>
+            <div class="contactUs-block__item">
+                <p class="withImage"><img src="image/icons/contacts-block_time.png"/> Режим работы:
+                </p>
+                <p>Пн, Вт, Ср, Чт, Пт - с 09:00 до 19:00<br>
+                    Сб, Вс - выходной</p>
+            </div>
+        </div>
+        <div class="contactUs-block__bottom">
+            <div class="contactUs-block__item">
+                <h3>Напиши нам сюда:</h3>
+                <div>
+                    <a href="https://t.me/avtoshumbot"><img src="image/icons/contacts-block_telegram.png"/> </a>
+                    <a href="https://api.whatsapp.com/send?phone=79609910366&text="><img
+                            src="image/icons/contacts-block_whatsapp.png"/> </a>
+                </div>
+            </div>
+            <div class="contactUs-block__item">
+                <h3>Подпишись на нас</h3>
+                <div>
+                    <a href="https://vk.com/omskshumoff"><img src="image/icons/contacts-block_vk.png"/> </a>
+                    <a href="https://www.youtube.com/channel/UCnC6A2Kf56Yilc3_KBq2pQg"><img
+                            src="image/icons/contacts-block_youtube.png"/> </a>
+                    <a href="https://www.instagram.com/avtoshum.rf/"><img
+                            src="image/icons/contacts-block_instagram.png"/> </a>
+                    <a href="https://www.drive2.ru/o/ShumoffOmsk"><img src="image/icons/contacts-block_d.png"/> </a>
+                </div>
+            </div>
+            <div class="contactUs-block__item">
+                <h3>Онлайн чат</h3>
+                <div class="contacts-block__item-flex">
+                    <p>Напиши прямо здесь</p>
+                    <img src="image/icons/contacts-block__online-chat.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mobile-h2">Где мы находимся</h2>
+    <div class="where-block">
+        <div class="where-block__map">
+            // here put map
+        </div>
+        <h2>Схема проезда</h2>
+        <div class="where-block__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <a href="https://yandex.ru/maps/66/omsk/?ll=73.368212%2C54.989342&mode=search&oid=1735195806&ol=biz&z=11"
+               class="blue-link">Проложить маршрут</a>
+        </div>
+    </div>
+
+    <h2 class="mobile-h2">Более 300 отзывов</h2>
+    <div class="reviews-block">
+        <div class="reviews-block__item">
+            <div class="reviews-block__item-title">
+                <img src="image/icons/reviews-block_comment.png"/>
+                <p>Игорь Иваненко<br>
+                    06.04.2020<br>
+                    УАЗ Patriot Pickup</p>
+            </div>
+            <p>Недавно заезжали в этот сервисный центр - ребята назвали приемлемую стоимость за шумоизоляцию нашего
+                авто, сделали все в сроки, аккуратно, без претензий. Можем только рекомендовать.</p>
+        </div>
+        <div class="reviews-block__item">
+            <div class="reviews-block__item-title">
+                <img src="image/icons/reviews-block_comment.png"/>
+                <p>Александр<br>
+                    03.04.2020<br>
+                    Mitsubishi Outlander GT</p>
+            </div>
+            <p>Чисто, аккуратно, работают добросовестно. Рекомендую!</p>
+        </div>
+        <div class="reviews-block__item">
+            <span>Наши многочисленные клиенты нас рекомендуют!</span>
+            <p>Читайте больше отзывов</p>
+            <a class="blue-link" href="https://автошум.рф/reviews/">Смотреть отзывы</a>
+        </div>
+
+    </div>
+    <div class="mobile-reviews-block" style="display:none;">
+        <div class="reviews-block__item">
+            <div class="reviews-block__item-title">
+                <img src="image/icons/reviews-block_comment.png"/>
+                <p>Игорь Иваненко<br>
+                    06.04.2020<br>
+                    УАЗ Patriot Pickup</p>
+            </div>
+            <p>Недавно заезжали в этот сервисный центр - ребята назвали приемлемую стоимость за шумоизоляцию нашего
+                авто, сделали все в сроки, аккуратно, без претензий. Можем только рекомендовать.</p>
+        </div>
+        <div class="reviews-block__item">
+            <div class="reviews-block__item-title">
+                <img src="image/icons/reviews-block_comment.png"/>
+                <p>Александр<br>
+                    03.04.2020<br>
+                    Mitsubishi Outlander GT</p>
+            </div>
+            <p>Чисто, аккуратно, работают добросовестно. Рекомендую!</p>
+        </div>
+        <div class="reviews-block__item last-item">
+            <span>Наши многочисленные клиенты нас рекомендуют!</span>
+            <p>Читайте больше отзывов</p>
+            <a class="blue-link" href="https://автошум.рф/reviews/">Смотреть отзывы</a>
+        </div>
+
+    </div>
+
+    <div class="leadform-block">
+        <div class="leadform-block__image"></div>
+        <h2>Записаться на шумоизоляцию автомобиля</h2>
+        <span>
+            Оставьте номер телефона и получите бесплатную консультацию в течение дня!
+        </span>
+        <div class="leadform-block__flex">
+            <input type="text" placeholder="Ваш телефон*"/>
+            <input type="submit" value="Отправить заявку"/>
+        </div>
+        <p>Наш менеджер поможет подобрать подходящий уровень шумоизоляции,
+            оценит работу и запишет на удобное время.</p>
+    </div>
+    <!-- main content -->
+
+    <footer class="footer">
+        <div class="footer__line-1">
+            <div class="container">
+                <div class="footer__line-1__section footer__line-1__section-1">
+                    <div>
+                        <!--Меню bottom-->
+                        <ul class="footerMenu">
+                            <div class="footer__linksListTitle">
+                                <a href="/services/">Шумоизоляция</a>
+                            </div>
+                            <nav class="footer__linksList">
+                                <a class="footer__linksListLink" href="/calc/">Стоимость</a>
+                                <a class="footer__linksListLink" href="/calc/">Услуга</a>
+                                <a class="footer__linksListLink" href="/our_works/">Примеры работ</a>
+                                <a class="footer__linksListLink" href="/sale/">Акции</a>
+                            </nav>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__line-1__section footer__line-1__section-2">
+                    <div>
+                        <!--Меню bottom2-->
+                        <ul class="footerMenu">
+                            <div class="footer__linksListTitle">
+                                <a href="/products/">Материалы</a>
+                            </div>
+                            <nav class="footer__linksList">
+                                <a class="footer__linksListLink" href="/calc/">Расчет количества</a>
+                                <a class="footer__linksListLink" href="/how-to-buy/">Как купить</a>
+                                <a class="footer__linksListLink" href="/pay-delivery/">Оплата и доставка</a>
+                                <a class="footer__linksListLink" href="/useful/">Полезно знать</a>
+                            </nav>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__line-1__section footer__line-1__section-3">
+                    <!--Меню bottom3-->
+                    <ul class="footerMenu">
+                        <div class="footer__linksListTitle">
+                            <a href="/about/">Информация</a>
+                        </div>
+                        <nav class="footer__linksList">
+                                <span>
+                                <a class="footer__linksListLink" href="/about/#address">Контактная информация</a>
+                                <a class="footer__linksListLink" href="/reviews/">Отзывы</a>
+                                </span><span>
+                                <a class="footer__linksListLink" href="/qa/">Вопрос-ответ</a>
+                                <a class="footer__linksListLink" href="/policy/">Политика конфиденциальности</a>
+                        </span>
+                        </nav>
+                    </ul>
+                </div>
+                <div class="footer__line-1__section footer__line-1__section-4">
+                    <a class="btn btn-4 btn-big footer__getCallTrigger js-getCallTrigger js-showModal" href="#"
+                       data-target="#callMeBackModal" onclick="ym(44874988,'reachGoal','click-call-button-footer')">Заказать
+                        звонок</a>
+                </div>
+                <div class="footer__line-1__section footer__line-1__section-5">
+                    <a class="btn btn-3 btn-big footer__sendRequestTrigger js-showModal" href="#"
+                       data-target="#orderRequestModal" onclick="ym(44874988,'reachGoal','click-button-footer')">Отправить
+                        заявку</a>
+                </div>
+                <div class="footer__line-1__section footer__line-1__section-5">
+                    <div class="footer__contacts">
+                        <!-- Контакты в подвале -->
+                        <a class="footer__contactsPhone" href="tel:+73812218254"><b>+7 381
+                            221-82-54</b></a>
+                        <a class="footer__address" href="/about/#address">Омск, ул. Заводская, д. 34А/1,<br> ул.
+                            Барнаульская д. 6</a>
+                        <a class="footer__destinationPath" href="/about/#map">Схема проезда</a>
+                    </div>
+                </div>
+                <div class="footer__line-1__section footer__line-1__section-6">
+                    <div class="footer__network">
+                        <!-- Соц сети -->
+                        <span>
+                        <a target="_blank" class="footer__network__link" href="https://vk.com/omskshumoff"> <img
+                                alt="vk"
+                                src="image/icons/vk.png">
+                        </a>
+                        <a target="_blank" class="footer__network__link"
+                           href="https://www.drive2.ru/o/ShumoffOmsk">
+                            <img alt="drive2" src="image/icons/drive2.png"> </a>
+                        </span><span>
+                        <a
+                                target="_blank" class="footer__network__link"
+                                href="https://www.youtube.com/channel/UCnC6A2Kf56Yilc3_KBq2pQg"> <img alt="youtube"
+                                                                                                      src="image/icons/youtube.png">
+                        </a>
+                        <a target="_blank" class="footer__network__link" href="https://www.instagram.com/avtoshum.rf/">
+                            <img alt="instagram" src="image/icons/1.png"></a>
+                    </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer__line-2">
+            <div class="container">
+                <div class="footer__development">
+                    <!--noindex--><a rel="nofollow" href="http://rumedix.ru" target="_blank"><span
+                        class="footer__developmentName">Разработка сайта</span></a><!--/noindex-->
+                </div>
+                <div class="footer__copyright">
+                    <!-- Копирайт в подвале -->
+                    <span>© 2021 АвтоШум, шумоизоляция <br class="hidden visibleXs">автомобилей с 2011 года. <br
+                            class="hidden visibleXs visibleSm">Все права защищены.</span></div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/common.js"></script>
+<script src="js/main-1.js"></script>
+<script src="js/some_script.js"></script>
+<script src="js/some_script1.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
